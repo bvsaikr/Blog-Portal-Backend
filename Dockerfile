@@ -6,7 +6,7 @@ COPY pom.xml .
 COPY src ./src
 RUN mvn clean package -D SkipTests
 
-FROM FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 # Copy the JAR file into the container
 COPY target/Blog_Portal_Backend_full-0.0.1-SNAPSHOT.jar /app.jar
