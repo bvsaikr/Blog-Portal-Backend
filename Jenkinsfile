@@ -1,5 +1,5 @@
 pipeline{
-  agent{label "!buit-in"}
+  agent{label "!built-in"}
   tools{maven "Maven"}
   stages{
     stage("clone"){
