@@ -9,7 +9,7 @@ RUN mvn clean package -D SkipTests
 FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 # Copy the JAR file into the container
-COPY --from=build target/*.jar /app.jar
+COPY --from=build app/target/*.jar /app.jar
 # Expose the port your application runs on
 EXPOSE 8080
 # Command to run the application
